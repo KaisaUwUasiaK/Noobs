@@ -1,0 +1,100 @@
+/* Reset mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Điều chỉnh màu sắc và phông chữ */
+body {
+    background-color: #b9dcff; /* Màu nền nhẹ */
+    color: #333; /* Màu văn bản */
+    font-family: Arial, sans-serif; /* Phông chữ chính */
+    line-height: 1.6; /* Độ dài dòng */
+}
+
+/* Kiểu cho tiêu đề chính */
+h1 {
+    text-align: center; /* Căn giữa */
+    padding: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+/* Kiểu cho tiêu đề phụ */
+h2 {
+    margin-top: 20px; /* Khoảng cách phía trên */
+}
+
+/* Kiểu cho các đoạn văn bản */
+p {
+    margin-bottom: 20px; /* Khoảng cách phía dưới */
+}
+
+/* Kiểu cho hình ảnh */
+img {
+    display: block; /* Hiển thị là khối */
+    margin: 0 auto; /* Căn giữa */
+    max-width: 100%; /* Chiều rộng tối đa */
+    height: auto; /* Chiều cao tự động */
+}
+
+/* Kiểu cho danh sách */
+ul {
+    margin-bottom: 40px; /* Khoảng cách phía dưới */
+}
+
+/* Kiểu cho footer */
+footer {
+    background-color: #111; /* Màu nền footer */
+    color: #f8f9fa; /* Màu văn bản footer */
+    text-align: center; /* Căn giữa */
+    padding: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+figure {
+    margin-bottom: 30px;
+    text-align: center; /* Căn giữa hình ảnh */
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 15px;
+    color: #050000;
+    text-align: center; /* Căn giữa */
+}
+
+.image-grid {
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa của section */
+    margin: 0 auto; /* Căn giữa section trên màn hình */
+    padding: 20px; /* Khoảng cách nội dung với viền của section */
+    text-align: center; /* Căn giữa nội dung vàng section */
+}
+
+h2 {
+    text-align: center; /* Căn giữa tiêu đề "Hình Ảnh" */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tạo lưới các cột có độ rộng tối thiểu 300px và tự động điều chỉnh */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.image-item {
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung bên trong */
+    flex-direction: column; /* Xếp nội dung dưới dạng cột */
+    align-items: center; /* Căn giữa các phần tử bên trong theo chiều ngang */
+    text-align: center; /* Căn giữa nội dung văn bản */
+}
+
+.image-item img {
+    max-width: 100%; /* Hình ảnh không vượt quá kích thước của phần tử chứa */
+    height: auto; /* Đảm bảo tỷ lệ khung hình của hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+}
+
+.image-item p {
+    font-style: italic;
+    font-size: 14px;
+    color: #000000;
+}
